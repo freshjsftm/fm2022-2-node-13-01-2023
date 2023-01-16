@@ -1,6 +1,17 @@
 "use strict";
 const _ = require('lodash');
-console.log(_.random(5,10, true))
+const Component = require('./Component');
+require('./style.css');
+console.log('random number');
+const min = 5;
+const max = 10;
+console.log(_.random(min,max, true));
+console.log('5+10 = ', min+max);
+
+
+
+
+
 /*
 resolving -> loading -> wrapping -> evaluation -> caching
 resolving
