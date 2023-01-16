@@ -1,6 +1,6 @@
 "use strict";
-
-
+const _ = require('lodash');
+console.log(_.random(5,10, true))
 /*
 resolving -> loading -> wrapping -> evaluation -> caching
 resolving
