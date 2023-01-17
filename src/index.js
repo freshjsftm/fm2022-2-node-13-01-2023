@@ -1,16 +1,26 @@
 "use strict";
-const _ = require("lodash");
-// const Component = require("./Component");
+//core module
+//node modules
+import _ from 'lodash';
+//assets
+import './style.css';
+//custom modules
 import Component from './Component';
-require("./style.css");
-console.log("random number");
-const min = 5;
-const max = 10;
-console.log(_.random(min, max, true));
-console.log("5+10 = ", min + max);
-const comp = new Component("test");
-console.log(comp);
-comp.render();
+import math from './math';
+const {pow, sum, div} = math;
+console.log(math);
+console.log(pow);
+console.log("2**3 = ", pow(2, 3 ));
+console.log("2 + 3 = ", sum(2, 3 ));
+console.log("2 / 3 = ", div(2, 3 ));
+// console.log("random number");
+// const min = 5;
+// const max = 10;
+// console.log(_.random(min, max, true));
+// console.log("5+10 = ", min + max);
+// const comp = new Component("test");
+// console.log(comp);
+// comp.render();
 
 /*
 resolving -> loading -> wrapping -> evaluation -> caching
