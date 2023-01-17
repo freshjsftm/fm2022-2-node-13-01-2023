@@ -3,8 +3,9 @@ class Component{
     this.prop = prop;
   }
   render(){
-    console.log('render');
+    console.log('render: '+this.prop);
   }
 }
 
-module.exports = Component;
+//module.exports = Component;
+export default Component;
